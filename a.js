@@ -67,3 +67,33 @@ var intervalId = setInterval(function() {
         clearInterval(intervalId);
     }
 }, 1000);
+
+
+function eatDinner({
+    const p=Promise((res,rej)=>{
+        setTimeout(()=>{
+            let done=true 
+            if (done){
+                console.log("went to plyground")
+                res("playground time")
+            }else(
+                rej("not allowed")
+        },2000)    
+})
+return p
+    
+        
+);
+})
+
+
+
+
+doHomework().then(msg)=>{
+    console.log(msg)
+    return gotoplayground(
+}).then 
+
+
+
+
