@@ -1,22 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css' 
-import Homepage from './component/Homepage'
-import Article from './component/article'
+
+import React, { useState } from 'react'
+import './App.css'
 import Menu from './component/Menu'
+import Article from './component/Article'
+import Homepage from './component/Homepage'
 
 function App() {
-  const [count, setCount] = useState(0)
-  console.log(count)
-
+  const[data,setData]=useState("Sample data")
   return (
     <>
-    <Homepage/>
-    <Menu count={count} setCount={setCount}/> 
-    <Article />
-      
+      <Homepage/>
+      <Menu/>
+      <Article data={data}/>
     </>
   )
 }

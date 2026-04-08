@@ -1,3 +1,4 @@
+
 import React ,{Component}from 'react'
 import { add as addition } from './utility'
 // function Menu() {
@@ -18,8 +19,8 @@ import { add as addition } from './utility'
 // export default Menu
 
 class Menu extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state={
             count:0,
             age:0,
@@ -29,29 +30,31 @@ class Menu extends Component {
     }
 
     componentDidMount(){
-        console.log("compound Mounted")
+        console.log("Component Mounted")
+        
 
-        //data to be retreived from backend
+        // data to be retreived from backend
     }
 
-    shouldComponentUpdate(nextProp, nextState){
+    shouldComponentUpdate(nextProps, nextState){
         if(nextState.count===1){
             return false
         }
-        console.log("should component update")
+        console.log("Should componenet update")
         return true
     }
 
     componentDidUpdate(){
-        console.log("compound didupdate")
+        console.log("Component  didUpdate")
     }
 
     handleIncrement=()=>{
         this.setState({count:this.state.count+1})
     }
 
-    compundWillUpdate(){
-        console.log("compound will unmount")
+
+    componentWillUnmount(){
+        console.log("Component will unmount")
     }
     render() {
         return (
