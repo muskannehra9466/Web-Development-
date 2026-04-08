@@ -27,8 +27,31 @@ class Menu extends Component {
         }
 
     }
+
+    componentDidMount(){
+        console.log("compound Mounted")
+
+        //data to be retreived from backend
+    }
+
+    shouldComponentUpdate(nextProp, nextState){
+        if(nextState.count===1){
+            return false
+        }
+        console.log("should component update")
+        return true
+    }
+
+    componentDidUpdate(){
+        console.log("compound didupdate")
+    }
+
     handleIncrement=()=>{
         this.setState({count:this.state.count+1})
+    }
+
+    compundWillUpdate(){
+        console.log("compound will unmount")
     }
     render() {
         return (
