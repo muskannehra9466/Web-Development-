@@ -1,45 +1,12 @@
-// import React from 'react'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
 
-// function Menu(props) {
-//   return (
-//     <>
-//     <div>Menu</div>
-//     <ul>
-//         <li>Home</li>
-//         <li>About</li>
-//         <li>Contact</li>
-//     </ul>
-//     <button
-//           className="counter"
-//           onClick={() => props.setCount((count) => count + 1)}
-//         >
-//           Count is {props.count}
-//         </button>
-//         </>
-//   )
-// }
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
 
-// export default Menu
-import React, { Component } from 'react'
-
-export default class menu extends Component {
-  render() {
-    return (
-    <>
-      <div>menu</div>
-      
-      <ul>
-         <li>Home</li>
-         <li>About</li>
-         <li>Contact</li>
-      </ul>
-      <button
-           className="counter"
-           onClick={() => this.props.setCount((count) => count + 1)}
-        >
-          Count is {this.props.count}
-    </button>
-    </>
-    )
-  }
-}
+    
+  </StrictMode>
+)
