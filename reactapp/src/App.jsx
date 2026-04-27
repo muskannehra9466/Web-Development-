@@ -4,7 +4,7 @@ import Menu from './component/Menu'
 import Article from './component/Article'
 import Homepage from './component/Homepage'
 // This matches your filename "Contect.jsx"
-import Contact from "./component/Contect"; 
+import Contact from "./component/Contact"; 
 
 function App() {
   const [data, setData] = useState("Sample data")
