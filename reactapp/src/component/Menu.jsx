@@ -12,6 +12,7 @@ function Menu() {
         <li>Sports</li>
         <li>Entertainment</li>
         <li>Polititcs</li>
+        
 
       </ul>
     </div>
